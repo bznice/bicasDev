@@ -1,0 +1,50 @@
+.dark {
+
+    /* - - - COLORS - - - */
+
+    --body-background-color: #121212;
+    --box-div-background-color: #420000;
+
+    --text-color-dark: #121212;
+    --text-shadow-color-dark: #484848;
+
+    --text-color-bright: #ededed;
+    --text-shadow-color-bright: #b7b7b7;
+
+    --h1-text-color: #121212;
+    --h1-text-shadow-color: #ababab;
+
+    --h2-text-color: #343434;
+    --h2-text-shadow-color: #cdcdcd;
+
+    --p-text-color: #565656;
+    --p-text-shadow-color: #efefef;
+
+    --span-error-text-color: #ee4242;
+    --span-error-text-shadow-color: #dd3131;
+
+    --input-background-color: #dcdcdc;
+    --input-border-color: #cbcbcb;
+    --input-text-color: #121212;
+    --input-text-shadow-color: #9a9a9a;
+
+    --button-background-color: #303030;
+    --button-border-color: #404040;
+    --button-text-color: #efefef;
+    --button-text-shadow-color: #424242;
+
+    /* - - - SIZES - - - */
+
+    --h1-font-size: 30px;
+    --h2-font-size: 20px;
+    --p-font-size: 18px;
+    --span-error-font-size: 14px;
+    --info-font-size: 14px;
+
+    --input-font-size: 14px;
+    --button-font-size: 14px;
+
+    /* - - - STYLES - - - */
+
+    --general-font-family: "Lucida Console";
+}
