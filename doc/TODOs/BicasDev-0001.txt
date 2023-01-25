@@ -1,0 +1,24 @@
+** Initial description **
+The index.html file will contain 3 ng-includes, deferred by ng-if (when one is true, other are false, like a XOR):
+    - hall partial - inHall = true:
+      - creation of nick, verify uniqueness;
+      - pop-up warning if nick not unique in session XXXX:
+        - go back because want to join in that session (XXXX);
+        - ignore because don't want that session (XXXX);
+    - lobby partial - inLobby = true:
+      - join/create session;
+    - lounge partial - core of this app, table, the pretended usage.
+
+Additional implementations (could be future tasks):
+- user can name the session when creating it;
+
+TODO-0001 - hall partial begin implementation:
+- add ng-includes in index.html
+- create hall partial containing:
+  - h1 title;
+  - input text to insert nickname;
+  - button to enter:
+- no logic for verifications for now;
+- no logic for pop-up;
+  - in two above need db and backend implementation;
+- logic for setting true the boolean of lobby partial.
