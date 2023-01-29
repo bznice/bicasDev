@@ -1,16 +1,18 @@
 <h1 class="generalH1Class">
-    WELCOME DEAR {{player.nick}}
+    WELCOME DEAR {{player.nick.toUpperCase()}}
 </h1>
-<div class="generalBoxDiv">
+<div class="generalBoxDiv lobbyBoxDiv">
     <h2 class="generalH2Class">
         Join in game session or create one?
     </h2>
+    <p></p>
     <button class="generalButtonClass">
             <!--ng-click="lobby.joinSession()"-->
         Join
     </button>
-    <button class="generalButtonClass">
-            <!--ng-click="lobby.createSession()"-->
+    <p></p>
+    <button class="generalButtonClass"
+            ng-click="lobbyStageCreateSession()">
         Create
     </button>
     <p></p>

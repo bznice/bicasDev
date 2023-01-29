@@ -8,41 +8,58 @@ angular.module("bicas").controller("bicasCtrl", ['$scope', function ($scope) {
     $scope.partialSelectorInLounge = false;
 
     $scope.player = null;
+    // player obj: nick, sessionCode
+    $scope.session = null;
+    // session obj: sessionCode, players
+
     //- FUNCTIONS ------------------------------------------------------------------------------------------------------
 
     // PARTIAL CONTROL METHODS
-    $scope.goToHall = function () {
+
+    $scope.showHall = function () {
         $scope.partialSelectorInHall = true;
         $scope.partialSelectorInLobby = false;
         $scope.partialSelectorInLounge = false;
     }
 
-    $scope.goToLobby = function () {
+    $scope.showLobby = function () {
         $scope.partialSelectorInHall = false;
         $scope.partialSelectorInLobby = true;
         $scope.partialSelectorInLounge = false;
     }
 
-    $scope.goToLounge = function () {
+    $scope.showLounge = function () {
         $scope.partialSelectorInHall = false;
         $scope.partialSelectorInLobby = false;
         $scope.partialSelectorInLounge = true;
     }
 
     // HALL CONTROL METHODS
-    $scope.hallStageCreatePlayer = function (playerParam) {
-        $scope.player = $scope.hallStageConfigPlayerNotInSession(angular.copy(playerParam));
-        delete playerParam;
-        $scope.goToLobby();
+
+    $scope.hallStageCreateNickPlayer = function (playerParams) {
+        $scope.player = $scope.hallStageCreatePlayerObjSessionNull(angular.copy(playerParams));
+        delete playerParams;
+        $scope.showLobby();
     }
 
-    $scope.hallStageConfigPlayerNotInSession = function (playerParam) {
-        return { nick: playerParam.nick.toLowerCase(), sessionCode: "" };
+    $scope.hallStageCreatePlayerObjSessionNull = function (playerParam) {
+        return { nick: playerParam.nick.toLowerCase(), session: "" };
     }
 
     // LOBBY CONTROL METHODS
 
+    $scope.lobbyStageCreateSession = function () {
+        $scope.session = $scope.lobbyStageCreateSessionObjWhenCreate();
+        $scope.showLounge();
+    }
+
+    $scope.lobbyStageCreateSessionObjWhenCreate = function () {
+        return { session: "testcode", players: $scope.player.nick };
+    }
+
     // LOUNGE CONTROL METHODS
+
+
     
     //------------------------------------------------------------------------------------------------------------------
 }]);

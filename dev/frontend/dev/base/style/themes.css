@@ -3,22 +3,25 @@
     /* - - - COLORS - - - */
 
     --body-background-color: #121212;
-    --box-div-background-color: #420000;
+    --general-box-div-background-color: #420000;
+    --hall-box-div-background-color: #427777;
+    --lobby-box-div-background-color: #774277;
+    --lounge-box-div-background-color: #777742;
 
     --text-color-dark: #121212;
-    --text-shadow-color-dark: #484848;
+    --text-shadow-color-dark: #b0b0b0;
 
     --text-color-bright: #ededed;
-    --text-shadow-color-bright: #b7b7b7;
+    --text-shadow-color-bright: #242424;
 
-    --h1-text-color: #121212;
+    --h1-text-color: #232323;
     --h1-text-shadow-color: #ababab;
 
     --h2-text-color: #343434;
-    --h2-text-shadow-color: #cdcdcd;
+    --h2-text-shadow-color: #232323;
 
-    --p-text-color: #565656;
-    --p-text-shadow-color: #efefef;
+    --general-p-text-color: #343434;
+    --general-p-text-shadow-color: #232323;
 
     --span-error-text-color: #ee4242;
     --span-error-text-shadow-color: #dd3131;
@@ -35,9 +38,9 @@
 
     /* - - - SIZES - - - */
 
-    --h1-font-size: 30px;
-    --h2-font-size: 20px;
-    --p-font-size: 18px;
+    --h1-font-size: 60px;
+    --h2-font-size: 24px;
+    --p-font-size: 16px;
     --span-error-font-size: 14px;
     --info-font-size: 14px;
 

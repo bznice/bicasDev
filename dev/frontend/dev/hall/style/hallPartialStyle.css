@@ -1,0 +1,5 @@
+@import url("../../base/style/themes.css");
+
+.hallBoxDiv {
+    background-color: var(--hall-box-div-background-color);
+}

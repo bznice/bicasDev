@@ -1,0 +1,5 @@
+@import url("../../base/style/themes.css");
+
+.loungeBoxDiv {
+    background-color: var(--lounge-box-div-background-color);
+}
