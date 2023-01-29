@@ -4,23 +4,24 @@
 <head>
     <!-- Tab -->
     <title>Bicas@Dev</title>
-    <link rel="icon" type="image/x-icon" href="dev/frontend/lib/icon/rm.ico">
+    <link rel="icon" type="image/x-icon" href="dev/lib/icon/rm.ico">
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="dev/frontend/dev/base/style/style.css">
-    <link rel="stylesheet" type="text/css" href="dev/frontend/dev/base/style/themes.css">
-    <link rel="stylesheet" type="text/css" href="dev/frontend/dev/hall/style/hallPartialStyle.css">
-    <link rel="stylesheet" type="text/css" href="dev/frontend/dev/lobby/style/lobbyPartialStyle.css">
-    <link rel="stylesheet" type="text/css" href="dev/frontend/dev/lounge/style/loungePartialStyle.css">
+    <link rel="stylesheet" type="text/css" href="dev/src/base/style/style.css">
+    <link rel="stylesheet" type="text/css" href="dev/src/base/style/themes.css">
+    <link rel="stylesheet" type="text/css" href="dev/src/hall/style/hallPartialStyle.css">
+    <link rel="stylesheet" type="text/css" href="dev/src/lobby/style/lobbyPartialStyle.css">
+    <link rel="stylesheet" type="text/css" href="dev/src/lounge/style/loungePartialStyle.css">
 
     <!-- Scripts -->
-    <script src="dev/frontend/lib/angular-1.8.2/angular.js"></script>
-    <script src="dev/frontend/dev/base/control/bicasCtrl.js"></script>
+    <script src="dev/lib/angular-1.8.2/angular.js"></script>
+    <script src="dev/src/firebase/script/firebase.js"></script>
+    <script src="dev/src/base/script/bicasCtrl.js"></script>
 </head>
 
 <body class="dark" ng-controller="bicasCtrl">
     <!-- SELECTOR -->
-    <ng-include src="'dev/frontend/dev/base/partial/basePartial.html'"></ng-include>
+    <ng-include src="'dev/src/base/partial/basePartial.html'"></ng-include>
 </body>
 
 </html>
