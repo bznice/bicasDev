@@ -1,4 +1,4 @@
-@import 'themes.css';
+@import url("themes.css");
 
 html {
     width: 100%;
@@ -19,11 +19,76 @@ body {
     background-color: var(--body-background-color);
 }
 
-.initH1 {
+.generalBoxDiv {
+    text-align: left;
+    margin: 20px 40px;
+    padding: 40px;
+    min-width: 400px;
+    border-radius: 25px;
+    background-color: var(--general-box-div-background-color);
+}
+
+.generalH1Class,
+.generalH2Class,
+.generalPClass,
+.generalFormClass,
+.generalInputClass,
+.generalButtonClass {
+    width: -webkit-fill-available;
+}
+
+.generalH1Class {
     margin: 25px 0;
     border: 0;
     padding: 0;
     font-size: var(--h1-font-size);
-    color: var(--h1-text-color);
-    text-shadow: var(--h1-text-shadow-color) 2px 1px;
+    color: var(--text-color-dark);
+    text-shadow: var(--text-shadow-color-dark) 2px 1px;
+}
+
+.generalH2Class {
+    text-align: center;
+    font-size: var(--h2-font-size);
+    color: var(--h2-text-color);
+    text-shadow: var(--h2-text-shadow-color) 1px 0.5px;
+}
+
+.generalPClass {
+    font-size: var(--p-font-size);
+    font-weight: bold;
+    color: var(--general-p-text-color);
+    text-shadow: var(--general-p-text-shadow-color) 0.5px 0.2px;
+}
+
+.generalInputClass {
+    margin: 0;
+    padding: 5px 5px;
+    border-radius: 3px;
+    font-size: var(--input-font-size);
+    font-family: var(--general-font-family);
+    background-color: var(--input-background-color);
+    border-color: var(--input-border-color);
+    color: var(--input-text-color);
+    text-shadow: var(--input-text-shadow-color) 0.5px 0.2px;
+}
+
+.generalButtonClass {
+    text-align: center;
+    padding: 5px 5px;
+    border-width: 1px;
+    border-radius: 3px;
+    font-size: var(--button-font-size);
+    font-family: var(--general-font-family);
+    background-color: var(--button-background-color);
+    border-color: var(--button-border-color);
+    color: var(--button-text-color);
+    text-shadow: var(--button-text-shadow-color) 0.5px 0.2px;
+}
+
+
+.errorSpan {
+    text-align: left;
+    font-size: var(--span-error-font-size);
+    color: var(--span-error-text-color);
+    text-shadow: var(--span-error-text-shadow-color) 2px 1px;
 }

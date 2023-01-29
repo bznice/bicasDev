@@ -1,0 +1,26 @@
+<h1 class="generalH1Class">
+    WELCOME TO BICAS APP!
+</h1>
+<div class="generalBoxDiv hallBoxDiv">
+    <form class="generalFormClass"
+          ng-submit="">
+        <h2 class="generalH2Class">
+            Let's create your nickname!
+        </h2>
+        <p></p>
+        <p class="generalPClass">
+            Nick:
+        </p>
+        <input type="text"
+               class="generalInputClass"
+               placeholder="Put nick here..."
+               ng-model="player.nick" />
+        <p></p>
+        <button class="generalButtonClass"
+                ng-click="hallStageCreateNickPlayer(player)"
+                ng-disabled="!player.nick">
+            Create
+        </button>
+        <p></p>
+    </form>
+</div>

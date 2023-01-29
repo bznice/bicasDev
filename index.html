@@ -9,6 +9,9 @@
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="dev/frontend/dev/base/style/style.css">
     <link rel="stylesheet" type="text/css" href="dev/frontend/dev/base/style/themes.css">
+    <link rel="stylesheet" type="text/css" href="dev/frontend/dev/hall/style/hallPartialStyle.css">
+    <link rel="stylesheet" type="text/css" href="dev/frontend/dev/lobby/style/lobbyPartialStyle.css">
+    <link rel="stylesheet" type="text/css" href="dev/frontend/dev/lounge/style/loungePartialStyle.css">
 
     <!-- Scripts -->
     <script src="dev/frontend/lib/angular-1.8.2/angular.js"></script>
@@ -16,7 +19,8 @@
 </head>
 
 <body class="dark" ng-controller="bicasCtrl">
-    <h1 class="initH1">Hello World!</h1>
+    <!-- SELECTOR -->
+    <ng-include src="'dev/frontend/dev/base/partial/basePartial.html'"></ng-include>
 </body>
 
 </html>

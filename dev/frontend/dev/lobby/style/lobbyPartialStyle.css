@@ -1,0 +1,5 @@
+@import url("../../base/style/themes.css");
+
+.lobbyBoxDiv {
+    background-color: var(--lobby-box-div-background-color);
+}
