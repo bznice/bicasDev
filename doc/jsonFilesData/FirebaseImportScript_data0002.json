@@ -1,0 +1,44 @@
+{
+  "TABLE_SESSION": {
+    "1": {
+      "code_session": "sid000",
+      "players": {
+        "1" : {
+          "nick": "bzesa"
+        },
+        "2" : {
+          "nick": "bznice"
+        },
+        "3" : {
+          "nick": "bzmessi"
+        },
+        "4" : {
+          "nick": "bzelio"
+        },
+        "5" : {
+          "nick": "bzgod"
+        },
+        "6" : {
+          "nick": "bzezolini"
+        },
+        "7" : {
+          "nick": "bzbrux"
+        }
+      }
+    },
+    "2": {
+      "code_session": "sid001",
+      "players": {
+        "1" : {
+          "nick": "ola"
+        },
+        "2" : {
+          "nick": "tudo"
+        },
+        "3" : {
+          "nick": "bem"
+        }
+      }
+    }
+  }
+}
